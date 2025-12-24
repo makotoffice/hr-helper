@@ -1,20 +1,45 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
 
-# Run and deploy your AI Studio app
+# HR Pro Toolbox
 
-This contains everything you need to run your app locally.
+A React-based toolbox for HR professionals, powered by AI.
 
-View your app in AI Studio: https://ai.studio/apps/drive/10k3lasGzgFYABGKhArgCj_VmaGhWHnmM
+## 🚀 Getting Started
 
-## Run Locally
+### Prerequisites
+- Node.js (v18 or higher recommended)
+- npm or yarn
 
-**Prerequisites:**  Node.js
+### Installation
 
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Create a `.env` file based on `.env.example` (if available) or set your API keys:
+   ```
+   VITE_GEMINI_API_KEY=your_api_key_here
+   ```
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+### Running Locally
+
+Start the development server:
+```bash
+npm run dev
+```
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+### Building for Production
+
+```bash
+npm run build
+```
+
+## 📦 Deployment
+
+This project is configured to deploy to **GitHub Pages** automatically using GitHub Actions.
+
+1. Go to your repository **Settings** > **Pages**.
+2. Under "Build and deployment", select **GitHub Actions** as the source.
+3. Push your changes to the `main` branch.
+4. The "Deploy to GitHub Pages" action will trigger and deploy your site.
